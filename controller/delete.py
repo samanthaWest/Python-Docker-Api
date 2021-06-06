@@ -1,3 +1,4 @@
+import logging
 from sanic import response
 from controller import create
 from share.response import error_response, success_response, exception_response
@@ -13,6 +14,7 @@ async def delete(request):
         , status=412)
     
     try: 
+        logging.info('Deleting item')
         asnyc with db.pool.acquire() as connection:
 
         statement = f'''
