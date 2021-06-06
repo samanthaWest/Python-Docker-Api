@@ -1,3 +1,6 @@
+import asyncio
+import asyncpg
+import psycopg2
 
 class DbConnector:
     """ Manages connection for SQL databse """
