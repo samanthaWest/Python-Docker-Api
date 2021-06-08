@@ -6,7 +6,7 @@ from python_api import api
 from python_api import config
 from pyton_api import database
 
-from controller import create, deletem update
+from controller import create, delete, update
 
 def initialize():
     """ Init python-api """
